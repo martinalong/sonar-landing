@@ -1,0 +1,31 @@
+body {
+  background-color: black;
+  overflow: hidden;
+}
+
+@keyframes scale {
+  0% {
+    transform: scale(1.5);
+  }
+  50% {
+    transform: scale(0.2);
+  }
+  100% {
+    transform: scale(0.1);
+  }
+}
+
+.dot {
+  position: absolute;
+  background-color: white;
+  height: 8px;
+  width: 8px;
+  border-radius: 50%;
+  animation-name: scale;
+  animation-duration: 3s;
+  animation-timing-function: ease-in-out;
+  animation-iteration-count: infinite;
+  position: absolute;
+  top: 50vh;
+  left: 50vw;
+}
